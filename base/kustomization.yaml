@@ -1,0 +1,10 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: traefik
+resources:
+  - traefik-rbac.yml
+  - traefik-crd.yml
+  - traefik-svc-lb.yml
+  - traefik-deployment.yml
+  - traefik-configmap.yaml
